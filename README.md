@@ -8,6 +8,3 @@
 
 ## Link to deployed app
 https://franklincedar92.github.io/Notey_McTaker/
-
-## GitHub Repository URL
-https://github.com/FranklinCedar92/Notey_McTaker
