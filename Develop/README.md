@@ -1,0 +1,13 @@
+# NoteTaker
+
+## Description
+#### This is a note-taking app that allows the user to take notes online and save them to a side-bar on the page with a clear and easy-to-use interface. Users can delete a note by clicking the delete button on each note in the sidebar.
+
+## Screenshot
+
+
+## Link to deployed app
+
+
+## GitHub Repository URL
+https://github.com/FranklinCedar92/Notey_McTaker

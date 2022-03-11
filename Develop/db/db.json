@@ -18,6 +18,11 @@
       "title": "To do 3/10",
       "text": "Finish a project\nCry on BART\navoid work\nGym\n",
       "id": "3"
+    },
+    {
+      "title": "Delete a note",
+      "text": "Dominique talked about removing notes from the array...",
+      "id": "4"
     }
   ]
 }

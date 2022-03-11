@@ -1,18 +1,14 @@
 const fs = require('fs');
 const path = require('path');
 
+// function to retrieve all notes
 function filterByQuery(query, noteArray) {
     let filteredResults = noteArray;
-    if (query.title) {
-        filteredResults = filteredResults.filter(note => note.title === query.title);
-    }
-    if (query.text) {
-        filteredResults = filteredResults.filter(note => note.text === query.text);
-    }
+
     return filteredResults;
 }
 
-
+// function to write/POST new note
 function createNewNote(body, noteArray) {
     const note = body;
     noteArray.push(note);
@@ -23,11 +19,13 @@ function createNewNote(body, noteArray) {
     return note;
 }
 
-function findById(id, noteArray) {
+// function to delete note
+function deleteById(id, noteArray) {
     const result = noteArray.filter(note => note.id === id)[0];
     return result;
 }
 
+// validates correct formatting of note
 function validateNote(note) {
     if (!note.title || typeof note.title !== 'string') {
         return false;
@@ -41,6 +39,6 @@ function validateNote(note) {
 module.exports = {
     filterByQuery,
     createNewNote,
-    findById,
+    deleteById,
     validateNote
 };

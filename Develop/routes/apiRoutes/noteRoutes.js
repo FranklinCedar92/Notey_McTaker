@@ -1,7 +1,8 @@
 const express = require('express');
 const router = express.Router();
-const { filterByQuery, createNewNote, findById, validateNote } = require('../../lib/notes');
-const notes = require('../../db/db.json');
+const { filterByQuery, createNewNote, deleteById, validateNote } = require('../../lib/notes');
+// desctructures note to access the array inside the JSON object
+const {notes} = require('../../db/db.json');
 
 // Get all notes
 router.get('/notes', (req, res) => {
@@ -15,6 +16,8 @@ router.get('/notes', (req, res) => {
 // Add note
 router.post('/notes', (req, res) => {
     req.body.id = notes.length.toString(); 
+
+    // validates that note is correctly formatted
     if (!validateNote(req.body)) {
         res.status(400).send('Note is not formatted correctly!');
     } else {
@@ -25,7 +28,7 @@ router.post('/notes', (req, res) => {
 
 // Delete note
 router.delete('/notes/:id', (req, res) => {
-    const result = findById(req.params.id, notes);
+    const result = deleteById(req.params.id, notes);
 
     if (!result) {
         res.status(400).send('Note not found');
