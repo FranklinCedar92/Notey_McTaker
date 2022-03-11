@@ -1,5 +1,5 @@
-const fs = require("fs");
-const path = require("path");
+const fs = require('fs');
+const path = require('path');
 
 function filterByQuery(query, noteArray) {
     let filteredResults = noteArray;
@@ -17,7 +17,7 @@ function createNewNote(body, noteArray) {
     const note = body;
     noteArray.push(note);
     fs.writeFileSync (
-        path.json(__dirname, '../db/db.json'),
+        path.join(__dirname, '../db/db.json'),
         JSON.stringify({ notes: noteArray}, null, 2)
     );
     return note;

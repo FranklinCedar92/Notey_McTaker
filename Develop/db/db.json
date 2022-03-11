@@ -1,6 +1,23 @@
-[
+{
+  "notes": [
     {
-        "title":"Test Title",
-        "text":"Test text"
+      "title": "Test Title",
+      "text": "Test text"
+    },
+    {
+      "title": "I'm gay",
+      "text": "Do whatever you want",
+      "id": "1"
+    },
+    {
+      "title": "Hmmm",
+      "text": "Am I okay?",
+      "id": "2"
+    },
+    {
+      "title": "To do 3/10",
+      "text": "Finish a project\nCry on BART\navoid work\nGym\n",
+      "id": "3"
     }
-]
+  ]
+}
