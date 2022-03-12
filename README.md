@@ -7,4 +7,4 @@
 ![Screenshot](/Develop/public/assets/NoteTaker.png)
 
 ## Link to deployed app
-https://franklincedar92.github.io/Notey_McTaker/
+https://secure-scrubland-32243.herokuapp.com/
