@@ -7,4 +7,4 @@
 ![Screenshot](/public/assets/NoteTaker.png)
 
 ## Link to deployed app
-https://secure-scrubland-32243.herokuapp.com/
+http://secure-scrubland-32243.herokuapp.com/
